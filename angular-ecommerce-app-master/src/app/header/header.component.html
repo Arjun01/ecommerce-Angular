@@ -1,0 +1,19 @@
+<div class="🍑">
+  <button
+    nz-button
+    routerLink="/login"
+    *ngIf="!isLoggedIn"
+  >
+    Sign in
+  </button>
+  <button
+    nz-button
+    routerLink="/register"
+    *ngIf="!isLoggedIn"
+  >
+    Sign up
+  </button>
+  <button nz-button (click)="logout()" *ngIf="isLoggedIn">
+    Sign out
+  </button>
+</div>
